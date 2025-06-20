@@ -1,2 +1,1 @@
-# ESP32c2_SDK
-ESP32c2_SDK
+把esp32c2放到第三方库的cmake文件夹下
