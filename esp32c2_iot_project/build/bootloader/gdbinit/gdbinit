@@ -1,0 +1,2 @@
+source /home/liu/BJF-esp32c2IotDemo/esp32c2_iot_project/build/bootloader/gdbinit/symbols
+source /home/liu/BJF-esp32c2IotDemo/esp32c2_iot_project/build/bootloader/gdbinit/connect

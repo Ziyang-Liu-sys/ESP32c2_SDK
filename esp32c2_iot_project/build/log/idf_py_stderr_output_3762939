@@ -1,0 +1,54 @@
+Command: /home/liu/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/liu/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 74880 --toolchain-prefix riscv32-esp-elf- --target esp32c2 --revision 100 --decode-panic backtrace /home/liu/BJF-esp32c2IotDemo/esp32c2_iot_project/build/esp32c2_iot_project.elf /home/liu/BJF-esp32c2IotDemo/esp32c2_iot_project/build/bootloader/bootloader.elf -m '/home/liu/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/liu/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 74880[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x403ac370: esp_bootloader_get_description at /home/liu/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:39 (discriminator 1)
+[0m
+[0;33m--- 0x403aeb70: esp_flash_encryption_enabled at /home/liu/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c:89
+[0m
+[0;33m--- 0x403ac37a: call_start_cpu0 at /home/liu/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200b1a4: wifi_init_sta at /home/liu/BJF-esp32c2IotDemo/esp32c2_iot_project/main/station_example_main.c:225 (discriminator 1)
+[0m
+[0;33m--- 0x40385f51: _esp_error_check_failed at /home/liu/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4038082a: panic_abort at /home/liu/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x40385f5c: __ubsan_include at /home/liu/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40380001: _vector_table at /home/liu/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x40380816: esp_restart_noos at /home/liu/esp/esp-idf/components/esp_system/port/soc/esp32c2/system_internal.c:101
+[0m
+[0;33m--- 0x403ac370: esp_bootloader_get_description at /home/liu/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:39 (discriminator 1)
+[0m
+[0;33m--- 0x403aeb70: esp_flash_encryption_enabled at /home/liu/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c:89
+[0m
+[0;33m--- 0x403ac37a: call_start_cpu0 at /home/liu/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200b1a4: wifi_init_sta at /home/liu/BJF-esp32c2IotDemo/esp32c2_iot_project/main/station_example_main.c:225 (discriminator 1)
+[0m
+[0;33m--- 0x40385f51: _esp_error_check_failed at /home/liu/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4038082a: panic_abort at /home/liu/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x40385f5c: __ubsan_include at /home/liu/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40380001: _vector_table at /home/liu/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x40380816: esp_restart_noos at /home/liu/esp/esp-idf/components/esp_system/port/soc/esp32c2/system_internal.c:101
+[0m
+[0;33m--- 0x403ac370: esp_bootloader_get_description at /home/liu/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:39 (discriminator 1)
+[0m
+[0;33m--- 0x403aeb70: esp_flash_encryption_enabled at /home/liu/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c:89
+[0m
+[0;33m--- 0x403ac37a: call_start_cpu0 at /home/liu/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m
